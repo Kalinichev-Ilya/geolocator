@@ -1,5 +1,7 @@
-require "geolocator/version"
+require 'geolocator/version'
+require 'geolocator/client'
+require 'httparty'
 
 module Geolocator
-  # Your code goes here...
+
 end
