@@ -1,6 +1,7 @@
-require_relative 'JSONator'
+require_relative '../helpers/JSONator'
 
-class CommonSerializer < JSONator
+class CommonSerializer
+  include JSONator
   attr_reader :version, :api_key
   
   def initialize(version, api_key)

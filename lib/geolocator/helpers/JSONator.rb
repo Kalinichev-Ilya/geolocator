@@ -1,9 +1,8 @@
-class JSONator
-  
+module JSONator
   def to_json
     self.to_hash.to_json
   end
-
+  
   def to_hash
     hash = {}
     self.instance_variables.each do |var|

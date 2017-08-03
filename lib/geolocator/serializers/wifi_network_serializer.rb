@@ -1,6 +1,7 @@
-require_relative'JSONator'
+require_relative '../helpers/JSONator'
 
-class WifiNetworkSerializer < JSONator
+class WifiNetworkSerializer
+  include JSONator
   attr_reader :mac, :signal_strength, :age
   
   def initialize(mac, signal_strength, age)

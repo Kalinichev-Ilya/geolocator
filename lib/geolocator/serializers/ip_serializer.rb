@@ -1,6 +1,7 @@
-require_relative 'JSONator'
+require_relative '../helpers/JSONator'
 
-class IpSerializer < JSONator
+class IpSerializer
+  include JSONator
   attr_reader :address_v4
   
   def initialize(address_v4)

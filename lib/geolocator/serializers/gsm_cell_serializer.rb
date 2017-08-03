@@ -1,6 +1,7 @@
-require_relative 'JSONator'
+require_relative '../helpers/JSONator'
 
-class GsmCellSerializer < JSONator
+class GsmCellSerializer
+  include JSONator
   attr_reader :countrycode, :operatorid, :cellid, :lac, :signal_strength, :age
   
   def initialize (countrycode, operatorid, cellid, lac, signal_strength, age)
